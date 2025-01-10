@@ -8,8 +8,8 @@ Aquí encontrarás recursos y actividades que te ayudarán a dominar conceptos c
 - **🎥 YouTube:** [Canal de YouTube Trubi Data](https://www.youtube.com/@lucastrubiano)
 
 ## 📚 Contenido
-1. SQL
-2. ...
+[▶️ Video 1: Guía Completa de Ingeniería de Datos en 2025](https://www.youtube.com/watch?v=RjyTcxm4muo&t=70s)
+
 
 ## Apoya el Proyecto
 Si te gusta el contenido de este repositorio y queres que siga creciendo, te invito a darle una estrella ⭐️ y seguirme en mi [canal de YouTube](https://www.youtube.com/@lucastrubiano). ¡Gracias por tu apoyo! 🚀
