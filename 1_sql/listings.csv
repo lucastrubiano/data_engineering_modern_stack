@@ -1,0 +1,4 @@
+id,name,host_id,price,location,availability
+1,Cozy Apartment Downtown,101,120.00,New York,30
+2,Beach House,102,200.00,Los Angeles,15
+3,Mountain Cabin,103,150.00,Denver,60
