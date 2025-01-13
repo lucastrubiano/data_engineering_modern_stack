@@ -170,3 +170,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 *.env
+*.code-workspace
+.DS_Store

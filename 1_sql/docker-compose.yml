@@ -41,3 +41,5 @@ networks:
 
 # Run in background command
 # docker-compose up -d
+
+# NOTE: docker compose (for MacOS) or docker-compose (for Windows/Linux)
