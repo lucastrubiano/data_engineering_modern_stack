@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    hostname: postgres
+    env_file:
+      - .postgres.env
+    # Example variables for .postgres.env
+    # POSTGRES_USER=postgres
+    # POSTGRES_PASSWORD=postgres
+    # POSTGRES_DB=my_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - postgres-network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
+    hostname: pgadmin
+    env_file:
+      - .pgadmin.env
+    # Example variables for .pgadmin.env
+    # PGADMIN_DEFAULT_EMAIL=admin@admin.com
+    # PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "8080:80"
+    networks:
+      - postgres-network
+
+
+volumes:
+  postgres_data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: ./postgres/data
+
+networks:
+  postgres-network:
+    driver: bridge
+
+# Build command
+# docker-compose up --build
+
+# Run in background command
+# docker-compose up -d
+
+# NOTE: docker compose (for MacOS) or docker-compose (for Windows/Linux)
