@@ -18,3 +18,20 @@ VALUES
 (1, 1, 2, '2023-01-01', '2023-01-05', 480.00),
 (2, 3, 1, '2023-01-10', '2023-01-15', 750.00),
 (3, 2, 3, '2023-02-01', '2023-02-03', 400.00);
+
+-- Actualizar el precio de un alojamiento
+UPDATE listings 
+SET price = 130.00 
+WHERE id = 1;
+
+-- Actualizar múltiples campos
+UPDATE listings 
+SET availability = availability - 5, 
+    price = price * 1.05;
+
+-- Eliminar un registro específico
+DELETE FROM listings 
+WHERE location = 'Denver';
+
+-- Eliminar todos los registros
+DELETE FROM listings;
